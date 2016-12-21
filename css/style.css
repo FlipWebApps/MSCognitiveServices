@@ -1,0 +1,28 @@
+.container{
+	display:inline-block;
+	width:320px;
+}
+.footer{
+	background:rgb(230,230,230);
+}
+#FaceMarker
+{
+	z-index: 10;
+	position: absolute;
+	display: none;
+	border: 2px;
+	border-color: red;
+	border-style: solid;
+}
+#Hat
+{
+	z-index: 10;
+	position: absolute;
+	display: none;
+}
+#Nose
+{
+	z-index: 10;
+	position: absolute;
+	display: none;
+}

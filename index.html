@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MS Cognitive Services Demo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/webcam.min.js"></script>
+	<script type="text/javascript" src="scripts/base64-binary.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+<h1>MS Cognitive Services Demo</h1>
+<div class="container"><div id="my_camera"></div><form><input type="button" value="Capture" onClick="capturePicture()"></form></div>
+<div class="container" style="position: relative"><b>Preview...</b>
+	<div style="position: relative">
+		<img id="Hat" src="images/hat.png"/>
+		<img id="Nose" src="images/red_nose.png"/>
+		<div id="results"></div>
+		<div id="FaceMarker"></div>
+	</div>
+	<div id="resultsActions" style="display:none;">
+		<button onclick="submitToEmotionAPI();">Emotions</button>
+		<button onclick="submitToFaceAPI();">Face Info</button>
+	</div>
+</div>
+<div class="container">
+	<div id="output">
+	</div>
+	<div class="footer" id="status">Waiting For Picture...</div>
+</div>
+
+
+</body>
+</html>
